@@ -1,0 +1,316 @@
+/*************************
+Base Styles
+*************************/
+
+body {
+  background: #edeff0;
+  padding: 50px 0 0;
+  font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+h1, h2 {
+  font-size: 2.4em;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #384047;
+  line-height: 1.2;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  max-width: 1080px;
+  position: relative;
+}
+.centered {
+  margin: 0 auto;
+}
+
+.grid-100{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contained {
+  background: white;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: inline-block;
+  width:45%;
+  margin-bottom: 12%;
+}
+
+.pkmnList {
+  /*display: inline-block;*/
+  /*width:45%;*/
+}
+
+.pkmnContainer {
+  display: block;
+  background: #edeff0;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 0 10px;
+
+}
+.pkmnIcon img {
+  max-width: 90%;
+}
+.pkmnName {
+  margin-bottom: 5px;
+  font-size: 1rem;
+
+}
+
+.pkmnType{
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  margin: 0 2px;
+}
+
+.undefined {
+  display:none;
+}
+
+.fire {
+  background-color: #f77;
+}
+
+.normal {
+  background-color: #fb7;
+}
+
+.water {
+  background-color: #1ef;
+}
+
+.bug {
+  background-color: #7d6;
+}
+
+.flying {
+  background-color: #aef;
+}
+
+.poison {
+  background-color: #bac;
+}
+
+.electric {
+  background-color: #fe9;
+}
+
+.ground {
+  background-color: #ca5;
+}
+
+.fairy {
+  background-color: #f9d;
+}
+
+.ice{
+  background-color: #dff;
+}
+
+.grass {
+  background-color: #cf9;
+}
+
+.fighting {
+  background-color: #d32;
+}
+
+.psychic {
+  background-color: #a6d;
+}
+
+.steel {
+  background-color: #999;
+}
+
+.rock {
+  background-color: #ccc;
+}
+
+.dragon {
+  background-color: #f92;
+}
+
+.dark {
+  background-color:#89a; 
+}
+
+.ghost {
+  background-color:#fff; 
+}
+
+.pkmnInfo {
+  display: inline-block;
+  vertical-align: top;
+  background: #edeff0;
+  position:relative;
+  border-radius: 5px;
+  width: 40%; 
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  padding: 0 15px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.infoTable:nth-child(n+2) {
+  display: none !important;
+}
+
+.pkmnInfo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.pkmnInfo table {
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+  margin: 5% auto 0;
+}
+
+.pkmnInfo table td {
+  line-height: 18px;
+}
+
+.pkmnInfo table td:first-child{
+  width:60%;
+}
+
+.nameInTable {
+  font-size: 1.8em;
+
+}
+
+#loadMore {
+  background: #3f8abf;
+  padding: 8px 0;
+  width: 45%;
+  font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  color: white;
+  font-weight: 500;
+  border: 3px solid #3f8abf;
+  outline: none;
+  cursor: pointer;
+  /*display: -moz-inline-stack;*/
+  display: block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 0 0 #3574a0;
+  -moz-box-shadow: 0 2px 0 0 #3574a0;
+  box-shadow: 0 2px 0 0 #3574a0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+
+
+/*************************
+Media Queries
+*************************/
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  .content {
+    width: 64%;
+  }
+
+  .pkmnList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pkmnContainer{
+    flex:1;
+  }
+
+  .pkmnContainer:nth-child(odd) {
+    margin-right: 8px;
+  }
+
+  .pkmnIcon img {
+    min-height: 120px;
+    max-width: 120px;
+    padding: 5px;
+  }
+
+  .pkmnInfo {
+    width: 26%;
+  }
+
+  .pkmnInfo table {
+    font-size: 12px;
+  }
+
+}
+
+
+@media only screen and (min-width: 695px){
+  .content {
+    width: 67%;
+  }
+
+  .pkmnContainer{
+    max-width: 30%;
+    margin-right: 10px;
+  }
+
+  .pkmnContainer:nth-child(odd) {
+    margin-right: 10px;
+  }
+
+  .pkmnInfo table {
+    width: 80%;
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (min-width: 896px){
+
+  .pkmnContainer{
+    flex:1 250px;
+  }
+
+}        
+
+
+@media only screen and (min-width: 1140px) {
+
+}
+
